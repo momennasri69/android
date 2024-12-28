@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bank">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_pay"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="center"
+            android:text="پرداخت"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.098" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/txt_jamkol"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="جمع کل:" />
+
+                <EditText
+                    android:id="@+id/etxt_jamkol"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:ems="10"
+                    android:hint="مبلغ قابل پرداخت"
+                    android:inputType="number"
+                    android:text=""
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="95dp">
+
+                <TextView
+                    android:id="@+id/txt_numbercart"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:text="شماره کارت:"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etxt_numbercart"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="123456789"
+                    android:inputType="number"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txt_cvv2"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:text=":CVV2"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etxt_cvv2"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="1111"
+                    android:inputType="number"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txt_tarikh"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:text="تاریخ انقضا:"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etxt_tarikh"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="01/01/01"
+                    android:inputType="number"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txt_ramz"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:text="رمز پویا:"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etxt_ramz"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="123456"
+                    android:inputType="number"
+                    android:text="" />
+            </TableRow>
+
+            <Button
+                android:id="@+id/btn_pay"
+                android:layout_width="267dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:onClick="click_pay"
+                android:text="پرداخت"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </TableLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

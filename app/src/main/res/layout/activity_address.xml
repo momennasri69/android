@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".address">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_add"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="center"
+            android:text="مشخصات"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.098" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="95dp">
+
+                <TextView
+                    android:id="@+id/txt_name"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:text="نام:"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etxt_name"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="نام خود را وارد کنید."
+                    android:inputType="text"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txt_family"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:text="نام خانوادگی:"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etxt_"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="نام خانوادگی خود را وارد کنید."
+                    android:inputType="text"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txt_adderess"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:text="آدرس:"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etxt_adderess"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="مشهد"
+                    android:inputType="text"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txt_phone"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:text="تلفن:"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etxt_phone"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="09151112233"
+                    android:inputType="number"
+                    android:text="" />
+            </TableRow>
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:onClick="click_save"
+                android:text="ثبت"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </TableLayout>
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

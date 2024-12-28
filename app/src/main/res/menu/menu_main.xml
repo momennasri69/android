@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.myprojectuni.MainActivity">
+    <item
+        android:id="@+id/home"
+        android:orderInCategory="1"
+        android:title="خانه"
+        android:icon="@drawable/baseline_home_24"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/user_acconte"
+        android:orderInCategory="2"
+        android:title="ثبت نام "
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/basket"
+        android:orderInCategory="3"
+        android:title="سبد خرید"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/product"
+        android:orderInCategory="4"
+        android:title="لیست محصولات"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/about_us"
+        android:orderInCategory="5"
+        android:title="تماس با ما"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/exit_out"
+        android:orderInCategory="6"
+        android:title="خروج"
+        app:showAsAction="never" />
+</menu>

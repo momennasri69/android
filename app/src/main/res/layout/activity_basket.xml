@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="566dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fish_product">
+
+        <Button
+            android:id="@+id/btn_takmil"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_gravity="end"
+            android:onClick="click_takmil"
+            android:text="تکمیل فرایند خرید"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.847" />
+
+        <TableRow
+            android:id="@+id/tableRow"
+            android:layout_width="414dp"
+            android:layout_height="84dp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_takmil"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txt_jamkol"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="جمع کل:"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etxt_takmil"
+                android:layout_width="265dp"
+                android:layout_height="62dp"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:hint="جمع کل سفارشات"
+                android:text="" />
+        </TableRow>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

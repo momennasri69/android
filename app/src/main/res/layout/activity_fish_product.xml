@@ -1,0 +1,1605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+ <androidx.constraintlayout.widget.ConstraintLayout
+
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fish_product">
+
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical"
+         app:layout_constraintBottom_toBottomOf="parent">
+
+         <TableLayout
+             android:layout_width="400dp"
+             android:layout_height="match_parent"
+             android:layout_gravity="center">
+
+             <TableRow
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+
+                 <TextView
+                     android:id="@+id/fish"
+                     android:layout_width="388dp"
+                     android:layout_height="80dp"
+                     android:gravity="center"
+                     android:text="انواع ماهی"
+                     android:textSize="34sp"
+                     android:textStyle="bold" />
+             </TableRow>
+
+             <TableRow
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:orientation="horizontal">
+
+                     <ImageView
+                         android:id="@+id/img_fishklika"
+                         android:layout_width="160dp"
+                         android:layout_height="110dp"
+                         app:srcCompat="@drawable/klika" />
+
+                     <TableLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent">
+
+                         <TableRow
+                             android:layout_width="92dp"
+                             android:layout_height="41dp">
+
+                             <TextView
+                                 android:id="@+id/txt_klika"
+                                 android:layout_width="77dp"
+                                 android:layout_height="match_parent"
+                                 android:gravity="center"
+                                 android:text="نام محصول:"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:id="@+id/txt_sharhklika"
+                                 android:layout_width="160dp"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="ماهی کلیکا"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+                         </TableRow>
+
+                         <TableRow
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent">
+
+                             <TextView
+                                 android:id="@+id/txt_idklika"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text=":idمحصول"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:id="@+id/txt_idklika1"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="20"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+                         </TableRow>
+
+                         <TableRow
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent">
+
+                             <TextView
+                                 android:id="@+id/txt_priceklika"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="قیمت:"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:id="@+id/txt_priceklika1"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="200000تومان" />
+                         </TableRow>
+
+                         <TableRow
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent">
+
+                             <TextView
+                                 android:id="@+id/txt_kilooklika"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="کیلو:"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:id="@+id/txt_kilooklika1"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="1کیلوگرم"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+
+                         </TableRow>
+
+                     </TableLayout>
+
+                 </LinearLayout>
+
+             </TableRow>
+
+         </TableLayout>
+
+         <TableRow
+             android:layout_width="244dp"
+             android:layout_height="match_parent"
+             android:layout_gravity="center"
+             android:gravity="center">
+
+             <Button
+                 android:id="@+id/btn_enklika"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:gravity="center"
+                 android:text=" افزودن به سبد خرید"
+                 android:textSize="16sp"
+                 android:textStyle="bold" >
+
+             </Button>
+         </TableRow>
+
+         <TableLayout
+             android:layout_width="400dp"
+             android:layout_height="match_parent"
+             android:layout_gravity="center">
+
+             <TableRow
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:orientation="horizontal">
+
+                     <ImageView
+                         android:id="@+id/img_ghezelrangin"
+                         android:layout_width="160dp"
+                         android:layout_height="110dp"
+                         app:srcCompat="@drawable/ghezelrangin" />
+
+                     <TableLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent">
+
+                         <TableRow
+                             android:layout_width="92dp"
+                             android:layout_height="41dp">
+
+                             <TextView
+                                 android:id="@+id/txt_ghezelrangin"
+                                 android:layout_width="77dp"
+                                 android:layout_height="match_parent"
+                                 android:gravity="center"
+                                 android:text="نام محصول:"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:id="@+id/txt_sharhghezelrangin"
+                                 android:layout_width="160dp"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="ماهی قزل آلا رنگین کمان"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+                         </TableRow>
+
+                         <TableRow
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent">
+
+                             <TextView
+                                 android:id="@+id/txt_idghezelrangin"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text=" :idمحصول"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:id="@+id/txt_idghezelrangin1"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="21"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+                         </TableRow>
+
+                         <TableRow
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent">
+
+                             <TextView
+                                 android:id="@+id/txt_priceghezelrangin"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="قیمت:"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:id="@+id/txt_priceghezelrangin1"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="500000تومان" />
+                         </TableRow>
+
+                         <TableRow
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent">
+
+                             <TextView
+                                 android:id="@+id/txt_kilooghezelrangin"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="کیلو:"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:id="@+id/txt_kilooghezelrangin1"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="1کیلوگرم"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                         </TableRow>
+
+                     </TableLayout>
+
+                 </LinearLayout>
+
+             </TableRow>
+
+         </TableLayout>
+
+         <TableRow
+             android:layout_width="244dp"
+             android:layout_height="match_parent"
+             android:layout_gravity="center"
+             android:gravity="center">
+
+             <Button
+                 android:id="@+id/btn_enghezelrangin"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:gravity="center"
+                 android:text="افزودن به سبد خرید"
+                 android:textSize="16sp"
+                 android:textStyle="bold" />
+         </TableRow>
+
+
+         <TableLayout
+             android:layout_width="400dp"
+             android:layout_height="match_parent"
+             android:layout_gravity="center">
+
+             <TableRow
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:orientation="horizontal">
+
+                     <ImageView
+                         android:id="@+id/img_ghezelkhaldar"
+                         android:layout_width="160dp"
+                         android:layout_height="110dp"
+                         app:srcCompat="@drawable/ghezelkhaldar" />
+
+                     <TableLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent">
+
+                         <TableRow
+                             android:layout_width="92dp"
+                             android:layout_height="41dp">
+
+                             <TextView
+                                 android:id="@+id/txt_ghezelkhaldar"
+                                 android:layout_width="77dp"
+                                 android:layout_height="match_parent"
+                                 android:gravity="center"
+                                 android:text="نام محصول:"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:id="@+id/txt_sharhghezelkhaldar"
+                                 android:layout_width="160dp"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="ماهی قزل آلا خالدار"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+                         </TableRow>
+
+                         <TableRow
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent">
+
+                             <TextView
+                                 android:id="@+id/txt_idghezelkhaldar"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text=" :idمحصول"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:id="@+id/txt_idghezelkhaldar1"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="22"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+                         </TableRow>
+
+                         <TableRow
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent">
+
+                             <TextView
+                                 android:id="@+id/txt_priceghezelkhaldar"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="قیمت:"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:id="@+id/txt_priceghezelkhaldar1"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="450000تومان" />
+                         </TableRow>
+
+                         <TableRow
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent">
+
+                             <TextView
+                                 android:id="@+id/txt_kilooghezelkhaldar"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="کیلو:"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:id="@+id/txt_kilooghezelkhaldar1"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="1کیلوگرم"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                         </TableRow>
+
+                     </TableLayout>
+
+                 </LinearLayout>
+
+             </TableRow>
+
+         </TableLayout>
+
+         <TableRow
+             android:layout_width="244dp"
+             android:layout_height="match_parent"
+             android:layout_gravity="center"
+             android:gravity="center">
+
+             <Button
+                 android:id="@+id/btn_enghezelkhaldar"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:gravity="center"
+                 android:text="افزودن به سبد خرید"
+                 android:textSize="16sp"
+                 android:textStyle="bold" />
+         </TableRow>
+
+         <TableLayout
+             android:layout_width="400dp"
+             android:layout_height="match_parent"
+             android:layout_gravity="center">
+
+             <TableRow
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:orientation="horizontal">
+
+                     <ImageView
+                         android:id="@+id/img_fishkapoor"
+                         android:layout_width="160dp"
+                         android:layout_height="110dp"
+                         app:srcCompat="@drawable/kapoor" />
+
+                     <TableLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent">
+
+                         <TableRow
+                             android:layout_width="92dp"
+                             android:layout_height="41dp">
+
+                             <TextView
+                                 android:id="@+id/txt_kapoor"
+                                 android:layout_width="77dp"
+                                 android:layout_height="match_parent"
+                                 android:gravity="center"
+                                 android:text="نام محصول:"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:id="@+id/txt_sharhkapoor"
+                                 android:layout_width="160dp"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="ماهی کپور"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+                         </TableRow>
+
+                         <TableRow
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent">
+
+                             <TextView
+                                 android:id="@+id/txt_idkapoor"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text=" :idمحصول"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:id="@+id/txt_idkapoor1"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="23"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+                         </TableRow>
+
+                         <TableRow
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent">
+
+                             <TextView
+                                 android:id="@+id/txt_pricekapoor"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="قیمت:"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:id="@+id/txt_pricekapoor1"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="400000تومان" />
+                         </TableRow>
+
+                         <TableRow
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent">
+
+                             <TextView
+                                 android:id="@+id/txt_kilookapoor"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="کیلو:"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:id="@+id/txt_kilookapoor1"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="1کیلوگرم"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                         </TableRow>
+
+                     </TableLayout>
+
+                 </LinearLayout>
+
+             </TableRow>
+
+         </TableLayout>
+
+         <TableRow
+             android:layout_width="244dp"
+             android:layout_height="match_parent"
+             android:layout_gravity="center"
+             android:gravity="center">
+
+             <Button
+                 android:id="@+id/btn_enkapoor"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:gravity="center"
+                 android:text="افزودن به سبد خرید"
+                 android:textSize="16sp"
+                 android:textStyle="bold" />
+         </TableRow>
+
+         <TableLayout
+             android:layout_width="400dp"
+             android:layout_height="match_parent"
+             android:layout_gravity="center">
+
+             <TableRow
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:orientation="horizontal">
+
+                     <ImageView
+                         android:id="@+id/img_fishghezel"
+                         android:layout_width="160dp"
+                         android:layout_height="110dp"
+                         app:srcCompat="@drawable/ghezel" />
+
+                     <TableLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent">
+
+                         <TableRow
+                             android:layout_width="92dp"
+                             android:layout_height="41dp">
+
+                             <TextView
+                                 android:id="@+id/txt_ghezel"
+                                 android:layout_width="77dp"
+                                 android:layout_height="match_parent"
+                                 android:gravity="center"
+                                 android:text="نام محصول:"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:id="@+id/txt_sharhghezel"
+                                 android:layout_width="160dp"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text=" ماهی قزل آلا"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+                         </TableRow>
+
+                         <TableRow
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent">
+
+                             <TextView
+                                 android:id="@+id/txt_idghezel"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text=" :idمحصول"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:id="@+id/txt_idghezel1"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="24"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+                         </TableRow>
+
+                         <TableRow
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent">
+
+                             <TextView
+                                 android:id="@+id/txt_priceghezel"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="قیمت:"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:id="@+id/txt_priceghezel1"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="650000تومان" />
+                         </TableRow>
+
+                         <TableRow
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent">
+
+                             <TextView
+                                 android:id="@+id/txt_kilooghezel"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="کیلو:"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:id="@+id/txt_kilooghezel1"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="1کیلوگرم"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                         </TableRow>
+
+                     </TableLayout>
+
+                 </LinearLayout>
+
+             </TableRow>
+
+         </TableLayout>
+
+         <TableRow
+             android:layout_width="244dp"
+             android:layout_height="match_parent"
+             android:layout_gravity="center"
+             android:gravity="center">
+
+             <Button
+                 android:id="@+id/btn_enghezel"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:gravity="center"
+                 android:text="افزودن به سبد خرید"
+                 android:textSize="16sp"
+                 android:textStyle="bold" />
+         </TableRow>
+
+         <TableLayout
+             android:layout_width="400dp"
+             android:layout_height="match_parent"
+             android:layout_gravity="center">
+
+             <TableRow
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:orientation="horizontal">
+
+                     <ImageView
+                         android:id="@+id/img_filehghezel"
+                         android:layout_width="160dp"
+                         android:layout_height="110dp"
+                         app:srcCompat="@drawable/filehghezel" />
+
+                     <TableLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent">
+
+                         <TableRow
+                             android:layout_width="92dp"
+                             android:layout_height="41dp">
+
+                             <TextView
+                                 android:id="@+id/txt_filehghezel"
+                                 android:layout_width="77dp"
+                                 android:layout_height="match_parent"
+                                 android:gravity="center"
+                                 android:text="نام محصول:"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:id="@+id/txt_sharhfilehghezel"
+                                 android:layout_width="160dp"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="فیله قزل آلا"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+                         </TableRow>
+
+                         <TableRow
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent">
+
+                             <TextView
+                                 android:id="@+id/txt_idfilehghezel"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text=" :idمحصول"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:id="@+id/txt_idfilehghezel1"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="24.1"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+                         </TableRow>
+
+                         <TableRow
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent">
+
+                             <TextView
+                                 android:id="@+id/txt_pricefilehghezel"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="قیمت:"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:id="@+id/txt_pricefilehghezel1"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="7500000تومان" />
+                         </TableRow>
+
+                         <TableRow
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent">
+
+                             <TextView
+                                 android:id="@+id/txt_kiloofilehghezel"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="کیلو:"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:id="@+id/txt_kiloofilehghezel1"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="1کیلوگرم"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                         </TableRow>
+
+                     </TableLayout>
+
+                 </LinearLayout>
+
+             </TableRow>
+
+         </TableLayout>
+
+         <TableRow
+             android:layout_width="244dp"
+             android:layout_height="match_parent"
+             android:layout_gravity="center"
+             android:gravity="center">
+
+             <Button
+                 android:id="@+id/btn_enfilehghezel"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:gravity="center"
+                 android:text="افزودن به سبد خرید"
+                 android:textSize="16sp"
+                 android:textStyle="bold" />
+         </TableRow>
+
+         <TableLayout
+             android:layout_width="400dp"
+             android:layout_height="match_parent"
+             android:layout_gravity="center">
+
+             <TableRow
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:orientation="horizontal">
+
+                     <ImageView
+                         android:id="@+id/img_fishsalmon"
+                         android:layout_width="160dp"
+                         android:layout_height="110dp"
+                         app:srcCompat="@drawable/salmon" />
+
+                     <TableLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent">
+
+                         <TableRow
+                             android:layout_width="92dp"
+                             android:layout_height="41dp">
+
+                             <TextView
+                                 android:id="@+id/txt_salmon"
+                                 android:layout_width="77dp"
+                                 android:layout_height="match_parent"
+                                 android:gravity="center"
+                                 android:text="نام محصول:"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:id="@+id/txt_sharhsalmon"
+                                 android:layout_width="160dp"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text=" ماهی سالمون"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+                         </TableRow>
+
+                         <TableRow
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent">
+
+                             <TextView
+                                 android:id="@+id/txt_idsalmon"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text=" :idمحصول"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:id="@+id/txt_idsalmon1"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="25"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+                         </TableRow>
+
+                         <TableRow
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent">
+
+                             <TextView
+                                 android:id="@+id/txt_pricesalmon"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="قیمت:"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:id="@+id/txt_pricesalmon1"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="700000تومان" />
+                         </TableRow>
+
+                         <TableRow
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent">
+
+                             <TextView
+                                 android:id="@+id/txt_kiloosalmon"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="کیلو:"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:id="@+id/txt_kiloosalmon1"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="1کیلوگرم"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                         </TableRow>
+
+                     </TableLayout>
+
+                 </LinearLayout>
+
+             </TableRow>
+
+         </TableLayout>
+
+         <TableRow
+             android:layout_width="244dp"
+             android:layout_height="match_parent"
+             android:layout_gravity="center"
+             android:gravity="center">
+
+             <Button
+                 android:id="@+id/btn_ensalmon"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:gravity="center"
+                 android:text="افزودن به سبد خرید"
+                 android:textSize="16sp"
+                 android:textStyle="bold" />
+         </TableRow>
+         <TableLayout
+             android:layout_width="400dp"
+             android:layout_height="match_parent"
+             android:layout_gravity="center">
+
+             <TableRow
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:orientation="horizontal">
+
+                     <ImageView
+                         android:id="@+id/img_fishsangsar"
+                         android:layout_width="160dp"
+                         android:layout_height="110dp"
+                         app:srcCompat="@drawable/sangsar" />
+
+                     <TableLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent">
+
+                         <TableRow
+                             android:layout_width="92dp"
+                             android:layout_height="41dp">
+
+                             <TextView
+                                 android:id="@+id/txt_sangsar"
+                                 android:layout_width="77dp"
+                                 android:layout_height="match_parent"
+                                 android:gravity="center"
+                                 android:text="نام محصول:"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:id="@+id/txt_sharhsangsar"
+                                 android:layout_width="160dp"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="ماهی سنگسر"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+                         </TableRow>
+
+                         <TableRow
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent">
+
+                             <TextView
+                                 android:id="@+id/txt_idsangsar"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text=" :idمحصول"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:id="@+id/txt_idsangsar1"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="26"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+                         </TableRow>
+
+                         <TableRow
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent">
+
+                             <TextView
+                                 android:id="@+id/txt_pricesangsar"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="قیمت:"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:id="@+id/txt_pricesangsar1"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="500000تومان" />
+                         </TableRow>
+
+                         <TableRow
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent">
+
+                             <TextView
+                                 android:id="@+id/txt_kiloosangsar"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="کیلو:"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:id="@+id/txt_kiloosangsar1"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="1کیلوگرم"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                         </TableRow>
+
+                     </TableLayout>
+
+                 </LinearLayout>
+
+             </TableRow>
+
+         </TableLayout>
+
+         <TableRow
+             android:layout_width="244dp"
+             android:layout_height="match_parent"
+             android:layout_gravity="center"
+             android:gravity="center">
+
+             <Button
+                 android:id="@+id/btn_ensangsar"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:gravity="center"
+                 android:text="افزودن به سبد خرید"
+                 android:textSize="16sp"
+                 android:textStyle="bold" />
+         </TableRow>
+
+         <TableLayout
+             android:layout_width="400dp"
+             android:layout_height="match_parent"
+             android:layout_gravity="center">
+
+             <TableRow
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:orientation="horizontal">
+
+                     <ImageView
+                         android:id="@+id/img_fishsorkhoo"
+                         android:layout_width="160dp"
+                         android:layout_height="110dp"
+                         app:srcCompat="@drawable/sorkhoo" />
+
+                     <TableLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent">
+
+                         <TableRow
+                             android:layout_width="92dp"
+                             android:layout_height="41dp">
+
+                             <TextView
+                                 android:id="@+id/txt_sorkhoo"
+                                 android:layout_width="77dp"
+                                 android:layout_height="match_parent"
+                                 android:gravity="center"
+                                 android:text="نام محصول:"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:id="@+id/txt_sharhsorkhoo"
+                                 android:layout_width="160dp"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="ماهی سرخو"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+                         </TableRow>
+
+                         <TableRow
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent">
+
+                             <TextView
+                                 android:id="@+id/txt_idsorkhoo"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text=" :idمحصول"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:id="@+id/txt_idsorkhoo1"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="27"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+                         </TableRow>
+
+                         <TableRow
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent">
+
+                             <TextView
+                                 android:id="@+id/txt_pricesorkhoo"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="قیمت:"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:id="@+id/txt_pricesorkhoo1"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="6500000تومان" />
+                         </TableRow>
+
+                         <TableRow
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent">
+
+                             <TextView
+                                 android:id="@+id/txt_kiloosorkhoo"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="کیلو:"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:id="@+id/txt_kiloosorkhoo1"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="1کیلوگرم"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+                         </TableRow>
+
+                     </TableLayout>
+
+                 </LinearLayout>
+
+             </TableRow>
+
+         </TableLayout>
+
+         <TableRow
+             android:layout_width="244dp"
+             android:layout_height="match_parent"
+             android:layout_gravity="center"
+             android:gravity="center">
+
+             <Button
+                 android:id="@+id/btn_ensorkhoo"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:gravity="center"
+                 android:text="افزودن به سبد خرید"
+                 android:textSize="16sp"
+                 android:textStyle="bold" />
+         </TableRow>
+
+         <TableLayout
+             android:layout_width="400dp"
+             android:layout_height="match_parent"
+             android:layout_gravity="center">
+
+             <TableRow
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:orientation="horizontal">
+
+                     <ImageView
+                         android:id="@+id/img_fishshir"
+                         android:layout_width="160dp"
+                         android:layout_height="110dp"
+                         app:srcCompat="@drawable/shir" />
+
+                     <TableLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent">
+
+                         <TableRow
+                             android:layout_width="92dp"
+                             android:layout_height="41dp">
+
+                             <TextView
+                                 android:id="@+id/txt_shir"
+                                 android:layout_width="77dp"
+                                 android:layout_height="match_parent"
+                                 android:gravity="center"
+                                 android:text="نام محصول:"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:id="@+id/txt_sharhshir"
+                                 android:layout_width="160dp"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="ماهی شیر"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+                         </TableRow>
+
+                         <TableRow
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent">
+
+                             <TextView
+                                 android:id="@+id/txt_idshir"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text=" :idمحصول"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:id="@+id/txt_idshir1"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="28"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+                         </TableRow>
+
+                         <TableRow
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent">
+
+                             <TextView
+                                 android:id="@+id/txt_priceshir"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="قیمت:"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:id="@+id/txt_priceshir1"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="7500000تومان" />
+                         </TableRow>
+
+                         <TableRow
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent">
+
+                             <TextView
+                                 android:id="@+id/txt_kilooshir"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="کیلو:"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:id="@+id/txt_kilooshir1"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="1کیلوگرم"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                         </TableRow>
+
+                     </TableLayout>
+
+                 </LinearLayout>
+
+             </TableRow>
+
+         </TableLayout>
+
+         <TableRow
+             android:layout_width="244dp"
+             android:layout_height="match_parent"
+             android:layout_gravity="center"
+             android:gravity="center">
+
+             <Button
+                 android:id="@+id/btn_enshir"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:gravity="center"
+                 android:text="افزودن به سبد خرید"
+                 android:textSize="16sp"
+                 android:textStyle="bold" />
+         </TableRow>
+
+
+         <TableLayout
+             android:layout_width="400dp"
+             android:layout_height="match_parent"
+             android:layout_gravity="center">
+
+             <TableRow
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:orientation="horizontal">
+
+                     <ImageView
+                         android:id="@+id/img_filehshir"
+                         android:layout_width="160dp"
+                         android:layout_height="110dp"
+                         app:srcCompat="@drawable/filehshir" />
+
+                     <TableLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent">
+
+                         <TableRow
+                             android:layout_width="92dp"
+                             android:layout_height="41dp">
+
+                             <TextView
+                                 android:id="@+id/txt_filehshir"
+                                 android:layout_width="77dp"
+                                 android:layout_height="match_parent"
+                                 android:gravity="center"
+                                 android:text="نام محصول:"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:id="@+id/txt_sharhfilehshir"
+                                 android:layout_width="160dp"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="فیله شیر"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+                         </TableRow>
+
+                         <TableRow
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent">
+
+                             <TextView
+                                 android:id="@+id/txt_idfilehshir"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text=" :idمحصول"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:id="@+id/txt_idfilehshir1"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="28.1"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+                         </TableRow>
+
+                         <TableRow
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent">
+
+                             <TextView
+                                 android:id="@+id/txt_pricefilehshir"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="قیمت:"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:id="@+id/txt_pricefilehshir1"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="6500000تومان" />
+                         </TableRow>
+
+                         <TableRow
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent">
+
+                             <TextView
+                                 android:id="@+id/txt_kiloofilehshir"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="کیلو:"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:id="@+id/txt_kiloofilehshir1"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center"
+                                 android:text="1کیلوگرم"
+                                 android:textSize="16sp"
+                                 android:textStyle="bold" />
+
+                         </TableRow>
+
+                     </TableLayout>
+
+                 </LinearLayout>
+
+             </TableRow>
+
+         </TableLayout>
+
+         <TableRow
+             android:layout_width="244dp"
+             android:layout_height="match_parent"
+             android:layout_gravity="center"
+             android:gravity="center">
+
+             <Button
+                 android:id="@+id/btn_enfilehshir"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:gravity="center"
+                 android:text="افزودن به سبد خرید"
+                 android:textSize="16sp"
+                 android:textStyle="bold" />
+         </TableRow>
+         <TableRow
+             android:layout_width="244dp"
+             android:layout_height="match_parent"
+             android:layout_gravity="center"
+             android:gravity="center">
+
+             <Button
+                 android:id="@+id/btn_basket"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:gravity="center"
+                 android:onClick="click_basket"
+                 android:text="رفتن به صفحه سبد خرید"
+                 android:textSize="16sp"
+                 android:textStyle="bold" />
+
+         </TableRow>
+         <TableRow
+             android:layout_width="244dp"
+             android:layout_height="match_parent"
+             android:layout_gravity="center"
+             android:gravity="center">
+
+             <Button
+                 android:id="@+id/btn_product"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:gravity="center"
+                 android:onClick="click_product"
+                 android:text="بازگشت به صفحه محصولات"
+                 android:textSize="16sp"
+                 android:textStyle="bold" />
+
+         </TableRow>
+     </LinearLayout>
+
+ </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
